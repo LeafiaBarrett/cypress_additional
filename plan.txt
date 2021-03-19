@@ -1,0 +1,79 @@
+https://the-internet.herokuapp.com/
+
+test 1:
+	click Add/Remove Elements
+	click Add Element
+		check elements
+	click Delete
+		check elements
+	click Add Element 4 times
+		check elements
+	click Delete on the 3rd button
+	click Delete on the 2nd button
+		check elements
+	click Delete on the 2nd button
+	click Delete
+		check elements
+	
+test 2:
+	click Checkboxes
+		check elements
+	click checkbox 1
+	click checkbox 2
+		check elements
+		
+test 3:
+	click Dropdown List
+	select Option 1
+		check element
+	select Option 2
+		check element
+
+test 4:
+	click Dynamic Controls
+		check elements
+	click checkbox
+		check element
+	click Remove
+		check element
+	click Add
+		check element
+	click Enable
+	type in field
+		check element
+	click Disable
+		check element
+
+test 5:
+	click Dynamic Loading
+	click Example 1
+	click Start
+		check element
+	go back to base page
+	click Dynamic Loading
+	click Example 2
+		check elements, should be missing
+	click Start
+		check element
+		
+xx	test 6: doesn't actually read value - nothing to test
+	click Inputs
+	type 21
+		check element
+	click up twice and down once
+		check element
+	type 5 after existing text
+		check element
+	delete existing text and type 8
+		check element
+		
+test 7:
+	click Key Presses
+	type A
+		check element
+	type WERT
+		check element
+	type space
+		check element
+	type shift+e
+		check element
