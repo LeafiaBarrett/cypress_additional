@@ -1,9 +1,4 @@
 const locatorList = {
-    sites: { 
-        internetSite: 'https://the-internet.herokuapp.com', 
-        demoqaSite: 'https://demoqa.com/'
-    },
-
     internetLocators: {
         addRemoveElementsLoc: 'ul li a[href="/add_remove_elements/"]',
         checkboxesLoc: 'ul li a[href="/checkboxes"]',
@@ -13,6 +8,5 @@ const locatorList = {
         keyPressesLoc: 'ul li a[href="/key_presses"]'
     }
 };
-
 
 export default locatorList;

@@ -1,3 +1,4 @@
 {
+    "baseUrl":"https://the-internet.herokuapp.com",
     "defaultCommandTimeout":10000
 }

@@ -1,12 +1,11 @@
 /// <reference types="cypress" />
 
-const {sites, internetLocators} = require('../plugins/locators.js');
-const {internetSite} = sites;
+const {internetLocators} = require('../plugins/locators.js');
 const {dynamicControlsLoc} = internetLocators;
 
 context('Actions', () => {
     it("tests the functionality of the Dynamic Controls page's controls", () => {
-      cy.visit(internetSite);
+      cy.visit('');
       cy.get(dynamicControlsLoc).click();
       
       var dynaCheckBox = '.example #checkbox-example div input[type="checkbox"]';

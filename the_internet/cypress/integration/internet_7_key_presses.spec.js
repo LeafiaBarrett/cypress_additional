@@ -1,12 +1,11 @@
 /// <reference types="cypress" />
 
-const {sites, internetLocators} = require('../plugins/locators.js');
-const {internetSite} = sites;
+const {internetLocators} = require('../plugins/locators.js');
 const {keyPressesLoc} = internetLocators;
 
 context('Actions', () => {
     it("tests the functionality of the Key Presses page's input bar and scanner", () => {
-      cy.visit(internetSite);
+      cy.visit('');
       cy.get(keyPressesLoc).click();
 
       var textInput = '.example form input#target';
