@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('goHome', () => { 
+    cy.get('#app header:nth-child(1) a:nth-child(1)').click();
+})
+
+Cypress.Commands.add('goToPage', (mainPage, subPage) => { 
+    cy.get(mainPage).click();
+    cy.get(subPage).click();
+})

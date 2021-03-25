@@ -16,13 +16,16 @@ var outputPermAddress = '#output #permanentAddress';
 
 var submit = '#submit';
 
-beforeEach(() => {
-  cy.visit('');
-  cy.get(elementsLoc).click();
-  cy.get(textBoxLoc).click();
-});
-
 context('Actions', () => {
+  before(() =>{
+    cy.visit('');
+  });
+
+  beforeEach(() => {
+    cy.goHome();
+    cy.goToPage(elementsLoc, textBoxLoc);
+  });
+
   it("tests the user input page's starting state", () => {
     cy.get(inputName).should('be.visible').and('be.empty');
     cy.get(inputEmail).should('be.visible').and('be.empty');
@@ -35,10 +38,10 @@ context('Actions', () => {
     cy.get(outputCurrAddress).should('not.exist');
     cy.get(outputPermAddress).should('not.exist');
   })
-})
 
-context('Actions', () => {
   it("tests basic form functionality", () => {
+    //cy.goToPage(elementsLoc, textBoxLoc);
+
     cy.get(inputName).type('Jane Doe');
     cy.get(submit).click();
     //assertions
@@ -59,10 +62,10 @@ context('Actions', () => {
     cy.get(outputCurrAddress).should('be.visible').and('contain.text','1 Temp Street');
     cy.get(outputPermAddress).should('be.visible').and('contain.text','1 Perm Street');
   })
-})
 
-context('Actions', () => {
   it("tests email's invalid email handler", () => {
+    //cy.goToPage(elementsLoc, textBoxLoc);
+
     cy.get(inputEmail).type('e@a');
     cy.get(submit).click();
     //assertions
