@@ -1,4 +1,4 @@
 {
     "baseUrl":"https://demoqa.com/",
-    "defaultCommandTimeout":10000
+    "defaultCommandTimeout":5000
 }

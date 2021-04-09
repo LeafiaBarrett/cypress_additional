@@ -1,6 +1,5 @@
 const locatorList = {
     homeLocators: {
-        //homePage: '#app header:nth-child(1) a:nth-child(1)',
         elementsLoc: '.home-body .category-cards .mt-4:nth-child(1)',
         formsLoc: '.home-body .category-cards .mt-4:nth-child(2)',
         alertsLoc: '.home-body .category-cards .mt-4:nth-child(3)',
